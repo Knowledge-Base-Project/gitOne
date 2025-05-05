@@ -1,0 +1,129 @@
+.knowledgeBase {
+  font-family: Arial, sans-serif;
+}
+
+.iconButton {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultItem {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.resultLinks a {
+  font-style: italic;
+  text-decoration: none;
+}
+
+.resultLinks a:hover {
+  text-decoration: underline;
+}
+
+.custom_btn {
+  background-color: #2d5157;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+.custom-btn:hover {
+  background-color: #244448; /* Slightly darker on hover */
+  border-color: #1a3336; /* Change border color on hover */
+}
+
+.searchBar {
+  width: 700px; /* Adjust width */
+  height: 40px; /* Adjust height */
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.custom_text {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: #2d5157; /* Custom color */
+}
+
+.dropdownMenu {
+  background-color: #2d5157 !important;  /* Force background color */
+  border-radius: 8px;                     /* Optional: rounded corners */
+  border: none !important;                /* Remove unwanted borders */
+}
+
+.custom-dropdown .dropdown-item {
+  color: white !important;  /* Ensure text is white */
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #1f3b44 !important;  /* Change background on hover */
+}
+
+
+/* .new css */
+.articlesSection {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 20px; /* Removes any built-in padding */
+  padding-bottom: 15px;
+}
+
+.articlesTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Cinzel', serif;
+  margin-right: 15px; /* Adds space between "MY ARTICLES" and "Drafts" */
+  margin-left: 16px;
+}
+
+.draftsButton {
+  background-color: #2D5157 !important;
+  margin-left: 15px; /* Adds space before "Drafts" button */
+  color: white;
+  padding: 5px 40px !important; /* Adjust padding for a better look */
+  border-radius: 30px !important; /* Makes the button more rounded */
+  font-size: 12px !important;
+  min-width: 150px; /* Makes the button longer */
+  height: 30px; /* Reduces height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;  /* Remove any borders */
+  box-shadow: none !important; /* Remove any shadow effects */
+}
+
+/* Add hover effect */
+.draftsButton:hover {
+  background-color: #1E3A40 !important; /* Darker shade on hover */
+  color: white !important; /* Ensure text remains visible */
+}
+
+.articleList {
+  padding-left: 40px; /* Uniform padding */
+  margin-top: 20px;
+  font-size: 14px !important;
+  /* background-color: #f9f9f9;  */
+  /* Add background for visibility */
+}
+
+.indentedLine {
+  margin-left: 20px;
+}
+ 
+.iconHover {
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.iconHover:hover {
+  transform: scale(1.2); /* Slightly enlarge the icon */
+  opacity: 0.7;
+}
+
+

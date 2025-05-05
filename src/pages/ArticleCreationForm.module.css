@@ -1,0 +1,327 @@
+.main {
+    padding: 20px 50px;
+    width: 1920px;
+    height: 1080px;
+}
+
+.navbar {
+    width: 1820px;
+    height: 87px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navContainer {
+    min-width: 1820px;
+    height: 87px;
+    align-content: space-between;
+    margin: 0px;
+}
+
+.navBrand {
+    width: 900px;
+    height: 87px;
+    padding: 0px;
+    margin: 0px;   
+    display: contents;
+    align-items: center;
+}
+
+.navLogo {
+    width: 87px;
+    height: 87px;
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navTitle {
+    display: inline;
+    min-width: 803px;
+    min-height: 87px;
+    font-family: 'Cinzel';
+    font-size: 64px;
+    font-weight: bold;
+    color: #2D5157;
+    line-height: auto;
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+}
+
+.navIcons {
+    min-width: 48px;
+    min-height: 48px;
+    color: #2D5157;     
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.navIcons2 {
+    min-width: 64px;
+    min-height: 64px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navSpace {
+    min-width: 609px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navMenu {
+    min-width: 301px;
+    min-height: 84px;
+    gap: 15px;
+    align-self: right;
+    padding: 10px 0px;
+    margin: 0px;
+    align-items: center;
+}
+
+.controls {
+    min-width: 1820px;
+    height: 100px;
+    padding: 10px;
+    gap: 15px;
+    margin: 0px;
+    justify-content: flex-end;    
+    display: inline-flex;   
+}
+
+.buttons {
+    width: 240px;
+    height: 62px; 
+    border-radius: 24px;  
+    border: none;   
+    font-family: 'Josefin Sans';
+    font-size: 32px;
+    font-weight: 550;
+    color: #FEFEFE;
+    line-height: 150%;
+    background-color: #545454;
+}
+
+.body {
+    min-width: 1820px;
+    min-height: 840px;
+    padding: 25px 50px;
+    margin: 0px;
+}
+
+.title {
+    padding: 0px;
+    margin-bottom: 25px;
+    font-family: 'Cinzel';
+    font-size: 48px;
+    font-weight: bold;
+    color: #797A7A;
+    line-height: 150%;
+}
+
+.form1 {
+    min-width: 1720px;
+    min-height: 705px;
+    padding: 0px;
+    gap: 40px;
+    margin: 0px;
+    display: inline-flex;    
+    font-family: 'Arial';
+    font-size: 24px;
+    font-weight: normal;
+    color: #000000;
+    line-height: auto;
+}
+
+.leftCol {
+    width: 960px;
+    height: 705px;
+    gap: 15px;
+}
+
+.rightCol {
+    width: 720px;
+    height: 705px;
+    gap: 10px;
+}
+
+.formGroup1 {
+    width: 958px;
+    height: 60px;
+    padding: 10px 0px;
+    gap: 10px;
+    margin: 0px;
+    display: inline-flex;
+}
+
+.formGroup2 {
+    width: 958px;
+    height: 525px;
+    padding: 10px 0px;
+    gap: 10px;
+    margin: 0px;
+    display: inline-flex;
+}
+
+.formGroup3 {
+    width: 720px;
+    height: auto;
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.formLabel1 {
+    width: 135px;
+    height: 40px;
+}
+
+.formLabel2 {
+    width: 720px;
+    height: 40px;
+    margin: 0px;
+}
+
+.textbox1 {
+    width: 813px;
+    height: 40px;
+    border: 2px solid #000000;
+}
+
+.textbox2 {
+    width: 813px;
+    height: 505px;
+    border: 2px solid #000000;
+    text-align: left;
+    text-wrap: balance;
+    word-wrap: break-word;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.formIcons {
+    width: 28px;
+    height: 28px;
+    color: #000000;
+    align-items: center;
+}
+
+.formButtons {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 2px;
+    height: 40px;
+}
+
+.formFileUpld {
+    border: 1px solid #000000;
+    font-family: 'Arial';
+    font-size: 18px;
+    font-weight: normal;
+    color: #000000;
+    line-height: auto;
+    height: 40px;
+    align-items: center;
+}
+
+.modalMain {
+    z-index: -10;
+    min-width: 1480px;
+    height: 840px;
+}
+
+.modalContent {
+    z-index: -10;
+    width: 1480px;
+    height: 840px;
+    border-radius: 75px;
+    padding: 25px 50px;
+    gap: 12px;
+    background-color: #FFFFFF;
+}
+
+.modalHeader {
+    width: 1380px;
+    height: 60px;
+    padding: 0px;
+    border: none;
+}
+
+.modalTitle {
+    font-family: 'Cinzel';
+    font-size: 48px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.modalBody {
+    width: 1380px;
+    height: 606px;
+    padding: 0px;
+    font-family: 'Arial';
+    font-size: 24px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.modalFooter {
+    width: 1380px;
+    height: 100px;
+    padding: 10px;
+    gap: 75px;    
+    border: none;
+    justify-content: center;
+}
+
+.modalButtons {
+    font-family: 'Josefin Sans';
+    font-size: 32px;
+    font-weight: 550;
+    color: #FEFEFE;
+    background-color: #545454;
+    border-radius: 24px;
+    border: none;
+    width: 240px;
+    height: 62px;
+}
+
+.line1 {
+    margin: 0px;
+}
+
+.linkInputContainer {
+    display: flex; /* Aligns children in a row */
+    align-items: center; /* Vertically centers the items */
+}
+
+.linkInputContainer input {
+    flex: 1; /* Allows the input to take up available space */
+}
+
+a {
+    word-wrap: break-word;
+}
+
+ul {
+    font-size: 18px;
+    margin: 10px 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+/* New class for scrollable ordered list */
+.scrollable-list {
+    max-height: 485px; /* Set a fixed height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #FEFEFE;
+    border: 1px solid #dad3d3f1;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1000;
+    font-size: 16px;
+    /* Add more styles as needed */
+}

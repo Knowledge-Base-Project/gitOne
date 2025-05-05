@@ -1,38 +1,216 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* App.css */
+.app-container {
+	font-family: Arial, sans-serif;
+	background-color: #f8f8f8;
+	min-height: 100vh;
+	padding: 20px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .App {
+	text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  @media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+	  animation: App-logo-spin infinite 20s linear;
+	}
   }
-}
+  
+  @keyframes App-logo-spin {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  
+  body {
+	  font-family: 'Varela Round', sans-serif;
+  }
+  
+  .navbar {
+	  padding-left: 16px;
+	  padding-right: 16px;
+	  border-radius: 0;
+  }
+  
+  .navbar .navbar-title {
+	  padding-left: 0;
+	  font-size: 20px;
+	  padding-right: 50px;
+  }
+  .navbar a {
+	  color: #888;
+	  font-size: 15px;
+  }
+  
+  .navbar .login-btn {
+	  min-width: 110px;
+	  max-height: 36px;
+  }
+  
+  .form-control {
+	  width: 90%; /* Make input fields take full width of the modal */
+	height: 30px; /* Adjust the height */
+	  position: relative;
+	  font-size: 13px;
+	  padding: 10px;
+	  box-sizing: border-box;
+	border-color: #797A7A;
+	color: #333; 
+  }
+   
+  .form-control:focus {
+	  border-color: #797A7A;
+	  box-shadow: 0 0 5px rgba(10, 11, 11, 0.5);
+	  z-index: 1;
+  }
+   
+  .btn-login {
+	background-color: #FA0000;     /* Base background color */
+	  font-size: 17px;
+	color: #fff;                   /* Text color */
+	text-align: center;            /* Center text */
+	border-radius: 20px;           /* Rounded corners */
+	width: 80px; 
+	height: 40px;
+	margin: 15px auto 0;  
+				/* Margin: top, right/left, bottom */
+	border: none;                  /* Remove border */
+	cursor: pointer;               /* Change cursor on hover */
+	  display: flex;                 /* Use flexbox for centering */
+	justify-content: center;       /* Center text horizontally */
+	align-items: center;
+	transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .btn-login:hover {
+	background-color: #D90000;     /* Darker shade on hover */
+	color: #fff;                   /* Ensure text color remains white */
+  }
+  
+  .btn-login:active {
+	background-color: #C80000;     /* Even darker shade on click */
+	color: #fff;                   /* Ensure text color remains white */
+	outline: none;                 /* Remove focus outline */
+  }
+  
+  .modal-title{
+	  font-size: 25px;
+	  font-weight: bold;    
+	  color: #545454;
+	  text-align: left;
+	  margin: 0px;
+  }
+  
+  .modal-content {
+	border: 3px solid #000000; /* Change this color and thickness as needed */
+	border-radius: 25px;
+	  width:430px; 
+	  height:250px;
+  }
+  
+  
+  .close {
+	border: none;                  /* Remove the default border */
+	background-color: black;      /* Set background color to black */
+	color: white;                 /* Set text color to white */
+	border-radius: 50%;           /* Make it circular */
+	width: 50px;                  /* Set width of the button */
+	height: 50px;                 /* Set height of the button */
+	display: flex;                /* Enable flexbox for centering */
+	justify-content: center;      /* Center the content horizontally */
+	align-items: center;          /* Center the content vertically */
+	position: absolute;           /* Allow positioning outside the modal */
+	top: -25px;                    /* Adjust as needed */
+	right: -25px;                  /* Adjust as needed */
+	z-index: 1;                   /* Ensure it's above other elements */
+	cursor: pointer;              /* Changes cursor on hover */
+	  font-size: 50px;                /* Increase font size for the X */
+  }
+  
+  .close:hover {
+	background-color: #333;       /* Darker shade on hover for effect */
+  }
+  
+  .warning-text {
+	text-align: left; 
+	color: #797A7A;
+  }
+  
+  .btn-no {
+	background-color: #FA0000;     /* Base background color */
+	  font-size: 17px;
+	color: #fff;                   /* Text color */
+	text-align: center;            /* Center text */
+	border-radius: 20px;           /* Rounded corners */
+	width: 80px; 
+	height: 40px;
+	margin: 10px auto; 
+	margin-left: 0; /* Ensure no margin */          /* Margin: top, right/left, bottom */
+	border: none;                  /* Remove border */
+	cursor: pointer;               /* Change cursor on hover */
+	  display: flex;                 /* Use flexbox for centering */
+	justify-content: center;       /* Center text horizontally */
+	align-items: center;
+	transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .btn-no:hover {
+	background-color: #D90000;     /* Darker shade on hover */
+	color: #fff;                   /* Ensure text color remains white */
+  }
+  
+  .btn-yes {
+	background-color: #2D5157;     /* Base background color */
+	  font-size: 17px;
+	color: #fff;                   /* Text color */
+	text-align: center;            /* Center text */
+	border-radius: 20px;           /* Rounded corners */
+	width: 80px; 
+	height: 40px;
+	margin: 10px auto; 
+	margin-right: 0; /* Ensure no margin */               /* Margin: top, right/left, bottom */
+	border: none;                  /* Remove border */
+	cursor: pointer;               /* Change cursor on hover */
+	  display: flex;                 /* Use flexbox for centering */
+	justify-content: center;       /* Center text horizontally */
+	align-items: center;
+	transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .btn-yes:hover {
+	background-color: #234045;     /* Darker shade on hover */
+	color: #fff;                   /* Ensure text color remains white */
+  }
+  .button-container {
+	display: flex; /* Use flexbox to align items in a row */
+	gap:10px; /* Optional: adds space between buttons */
+  
+  }
+  
+  .modal-dialog {
+	position: relative;
+	margin: auto;
+  }
+  
+  .modal-dialog-centered {
+	display: flex;
+	align-items: center; /* Center vertically */
+	min-height: calc(100vh - 1rem); /* Make sure it takes at least the full height of the viewport */
+  }
+  
+  .notification {
+	position: fixed;
+	top: 20px; /* Adjust position as necessary */
+	left: 50%;         /* Align to the center horizontally */
+	transform: translateX(-50%); /* Move back by 50% of its width to center it */
+	background-color: #797A7A; /* Green background */
+	color: white; /* White text */
+	padding: 15px; /* Some padding */
+	border-radius: 5px; /* Rounded edges */
+	z-index: 1000; /* Ensure it is above other elements */
+	transition: opacity 0.5s; /* Fade out effect */
+  }
+  
