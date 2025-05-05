@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/gitOne/static/css/main.f855e6bc.css",
+    "main.js": "/gitOne/static/js/main.eb900bed.js",
+    "static/js/453.f87592ff.chunk.js": "/gitOne/static/js/453.f87592ff.chunk.js",
+    "static/media/logo.svg": "/gitOne/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/gitOne/index.html",
+    "main.f855e6bc.css.map": "/gitOne/static/css/main.f855e6bc.css.map",
+    "main.eb900bed.js.map": "/gitOne/static/js/main.eb900bed.js.map",
+    "453.f87592ff.chunk.js.map": "/gitOne/static/js/453.f87592ff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.eb900bed.js"
+  ]
+}
