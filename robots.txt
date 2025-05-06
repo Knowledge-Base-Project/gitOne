@@ -1,1 +1,1 @@
-Sitemap: https://spa-github-pages.rafgraph.dev/sitemap.txt
+Sitemap: https://github.com/Knowledge-Base-Project/gitOne/blob/gh-pages/sitemap.txt
