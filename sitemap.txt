@@ -1,8 +1,9 @@
 https://knowledge-base-project.github.io/gitOne/
+https://knowledge-base-project.github.io/gitOne/?/updated-article
 https://knowledge-base-project.github.io/gitOne/?/searched-articles
 https://knowledge-base-project.github.io/gitOne/?/latest-articles
 https://knowledge-base-project.github.io/gitOne/?/my-articles
 https://knowledge-base-project.github.io/gitOne/?/add-article
 https://knowledge-base-project.github.io/gitOne/?/view-article
-https://knowledge-base-project.github.io/gitOne/?/updated-article
+
 https://knowledge-base-project.github.io/gitOne/?/logout
