@@ -71,21 +71,18 @@ const ArticleCreationForm = () => {
             {/* Article Creation Form Page */}
             <div className={styles.main}>
                 {/* Navbar */}
-                <Navbar                 
-                    className={styles.navbar}
-                    onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-                >
+                <Navbar className={styles.navbar}>
                     <Container className={styles.navContainer}>
-                        <Navbar.Brand className={styles.navBrand} href="#home">
+                        <Navbar.Brand className={styles.navBrand} onClick={() => navigate("/")}>
                             <Image src={logo} alt="Logo"className={styles.navLogo}/>                            
                             <div className={styles.navTitle}>KNOWLEDGE BASE</div>
                         </Navbar.Brand>        
                         <div className={styles.navSpace}></div>            
                         <Navbar.Collapse className={styles.navMenu}>                       
-                                <Nav.Link className={styles.navIcons2} eventKey="link-1"><ArrowLeft className={styles.navIcons}/></Nav.Link>                        
-                                <Nav.Link className={styles.navIcons2} href="#home"><HouseHeartFill className={styles.navIcons}/></Nav.Link>                        
-                                <Nav.Link className={styles.navIcons2} eventKey="link-2"><Search className={styles.navIcons}/></Nav.Link>                        
-                                <Nav.Link className={styles.navIcons2} eventKey="link-3"><PersonCircle className={styles.navIcons}/></Nav.Link>                            
+                                <Nav.Link className={styles.navIcons2} onClick={() => navigate(-1)}><ArrowLeft className={styles.navIcons}/></Nav.Link>                        
+                                <Nav.Link className={styles.navIcons2} onClick={() => navigate("/")}><HouseHeartFill className={styles.navIcons}/></Nav.Link>                        
+                                <Nav.Link className={styles.navIcons2} onClick={() => navigate("/searched-articles")}><Search className={styles.navIcons}/></Nav.Link>                        
+                                <Nav.Link className={styles.navIcons2} onClick={() => navigate("/")}><PersonCircle className={styles.navIcons}/></Nav.Link>                            
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>

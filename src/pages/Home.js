@@ -25,13 +25,13 @@ const KnowledgeBase = () => {
           <h1 className={styles.custom_text}>KNOWLEDGE BASE</h1>
         </div>
         <Nav className="d-flex align-items-center gap-3">
-          <a href="/" className="nav-btn">
+          <div className="nav-btn" onClick={() => navigate("/")}>
             <Icon.HouseFill size={24} color="#2E4A3F" />
-          </a>
-          <a href="searched-articles" className="nav-btn">
+          </div>
+          <div className="nav-btn" onClick={() => navigate("/searched-articles")}>
             <Icon.Search size={24} color="#2E4A3F"/>
-          </a>
-          <div href="LoginIndex.js" className="btn btn-dark rounded-pill px-3" onClick={() => setShowLoginModal(true)}>Login</div>
+          </div>
+          <div className="btn btn-dark rounded-pill px-3" onClick={() => setShowLoginModal(true)}>Login</div>
         </Nav>
       </Navbar>
 
@@ -42,28 +42,28 @@ const KnowledgeBase = () => {
           <h2 className="mb-4">Latest Articles</h2>
           <ul className="list-unstyled">
             <li>
-              <a href="article.html">"The Secret Life of Socks: Where Do They Really Go?"</a><br />
+              <i>"The Secret Life of Socks: Where Do They Really Go?"</i><br />
               <i>Kazi - 2/4/2025 (Lifestyle)</i>
             </li>
             <li>
-              <a href="article.html">"5 Productivity Hacks You Need to Try"</a><br />
+              <i>"5 Productivity Hacks You Need to Try"</i><br />
               <i>Aisha - 2/10/2025 (Productivity)</i>
             </li>
             <li>
-              <a href="article.html">"Understanding AI: The Future of Tech"</a><br />
+              <i>"Understanding AI: The Future of Tech"</i><br />
               <i>John - 3/1/2025 (Technology)</i>
             </li>
             <li>
-              <a href="article.html">"The Power of Morning Routines"</a><br />
+              <i>"The Power of Morning Routines"</i><br />
               <i>Sarah - 3/5/2025 (Wellness)</i>
             </li>
             <li>
-              <a href="article.html">"How to Budget Like a Pro"</a><br />
+              <i>"How to Budget Like a Pro"</i><br />
               <i>David - 3/12/2025 (Finance)</i>
             </li>
           </ul>
           <div className="text-start mt-3">
-          <a href="/latest-articles" className="btn btn-dark">More</a>
+            <div className="btn btn-dark" onClick={() => navigate("/latest-articles")}>More</div>
           </div>
         </div>
 
@@ -72,30 +72,29 @@ const KnowledgeBase = () => {
           <h2 className="mb-4">Recent Updates</h2>
           <ul className="list-unstyled">
             <li>
-              <a href="article.html">"The Secret Life of Socks: Where Do They Really Go?"</a><br />
+              <i>"The Secret Life of Socks: Where Do They Really Go?"</i><br />
               <i>Kazi - 2/4/2025 (Lifestyle)</i>
             </li>
             <li></li>
             <li>
-              <a href="article.html">"Why Minimalism is the Key to Happiness"</a><br />
+              <i>"Why Minimalism is the Key to Happiness"</i><br />
               <i>Emma - 2/15/2025 (Lifestyle)</i>
             </li>
             <li>
-              <a href="article.html">"Top 10 Travel Destinations for 2025"</a><br />
+              <i>"Top 10 Travel Destinations for 2025"</i><br />
               <i>Mike - 3/2/2025 (Travel)</i>
             </li>
             <li>
-              <a href="article.html">"The Science Behind Good Sleep"</a><br />
+              <i>"The Science Behind Good Sleep"</i><br />
               <i>Olivia - 3/8/2025 (Health)</i>
             </li>
             <li>
-              <a href="article.html">"Mastering Public Speaking: Tips & Tricks"</a><br />
+              <i>"Mastering Public Speaking: Tips & Tricks"</i><br />
               <i>Chris - 3/11/2025 (Self-Improvement)</i>
             </li>
           </ul>
           <div className="text-end mt-3">
-          <a href="/updated-article" className="btn btn-dark">More</a>
-          
+            <div className="btn btn-dark" onClick={() => navigate("/updated-article")}>More</div>
           </div>
         </div>
       </div>

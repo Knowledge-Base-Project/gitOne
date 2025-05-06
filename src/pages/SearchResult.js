@@ -68,8 +68,8 @@ const SearchResult = () => {
             </Dropdown.Toggle>
 
             <Dropdown.Menu align="end" style={{ backgroundColor: "#2d5157", borderRadius: "8px" }}>
-              <Dropdown.Item href="/my-articles" style={{ color: "white" }}>My Article</Dropdown.Item>
-              <Dropdown.Item href="/add-article" style={{ color: "white" }}>Add Article</Dropdown.Item>
+              <Dropdown.Item style={{ color: "white" }} onClick={() => navigate("/my-articles")}>My Article</Dropdown.Item>
+              <Dropdown.Item style={{ color: "white" }} onClick={() => navigate("/add-article")}>Add Article</Dropdown.Item>
               <Dropdown.Divider style={{ backgroundColor: "white" }} />
               <Dropdown.Item style={{ color: "white" }} onClick={() => setShowLogoutModal(true)}>Logout</Dropdown.Item>
             </Dropdown.Menu>
