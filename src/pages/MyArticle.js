@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Button, Dropdown } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
 // import * as Icon from 'react-bootstrap-icons';
 import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./MyArticle.module.css";
-import DeleteModal from "../modal/DeleteModal";
+import DeleteModal from "../util/DeleteModal";
+import Header from "../util/Header";
 
 const MyArticle = () => {
   const navigate = useNavigate();
@@ -17,34 +18,11 @@ const MyArticle = () => {
   };
 
   return (
-    <div className={`container py-4 ${styles.knowledgeBase}`} style={{ backgroundColor: "white" }}>
+    <div className={styles.knowledgeBase} style={{ backgroundColor: "white" }}>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
       {/* Header */}
-      <div className="d-flex justify-content-between align-items-center border-bottom pb-3">
-        <div className="d-flex align-items-center gap-2">
-          <img src="/Username.png" alt="Knowledge Base Logo" style={{ height: "60px", marginRight: "8px", marginBottom: "8px", padding: "0px" }} />
-          <h1 className={`${styles.custom_text}`}>
-            KNOWLEDGE BASE
-          </h1>
-        </div>
-
-        {/* Buttons Next to Knowledge Base Section */}
-        <div className="d-flex gap-2">
-          <Button variant="light" className="icon-btn" onClick={() => navigate(-1)}> {/* ✅ Navigate to ArticleView.js */}
-            <i className="fas fa-undo"></i> {/* Return */}
-          </Button>
-          <Button variant="light" className="icon-btn" onClick={() => navigate(-1)}> {/* ✅ Navigate to ArticleView.js */}
-            <i className="fas fa-house-chimney"></i> {/* Home */}
-          </Button>
-          <Button variant="light" className="icon-btn" onClick={() => navigate(-1)}> {/* ✅ Navigate to ArticleView.js */}
-            <i className="fas fa-search"></i> {/* Search */}
-          </Button>
-          <Button variant="light" className="icon-btn" onClick={() => navigate(-1)}> {/* ✅ Navigate to ArticleView.js */}
-            <i className="fas fa-user-circle"></i> {/* Account */}
-          </Button>
-        </div>
-      </div>
+      <Header/>
 
       {/* My Articles Section */}
       <div className={styles.articlesSection}>

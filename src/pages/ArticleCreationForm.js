@@ -2,27 +2,20 @@ import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import {
     Button,
-    Container,
-    Form,
-    Image, 
+    Form, 
     InputGroup,
     Modal,
-    Nav,
-    Navbar,
 } from 'react-bootstrap';
 import { 
-    ArrowLeft,
-    HouseHeartFill,
     Link45deg, 
-    PersonCircle,
-    Search,
     Trash3Fill,
 } from 'react-bootstrap-icons';
-import logo from '../pic/logo.png';
 import styles from './ArticleCreationForm.module.css';
-import SaveModal from "../modal/SaveModal";
-import PublishModal from "../modal/PublishModal";
-import CancelModal from "../modal/CancelModal";
+import SaveModal from "../util/SaveModal";
+import PublishModal from "../util/PublishModal";
+import CancelModal from "../util/CancelModal";
+import LogoutModal from "../util/LogoutModal";
+import Header from "../util/Header";
 
 const ArticleCreationForm = () => {
 
@@ -31,7 +24,7 @@ const ArticleCreationForm = () => {
     const [showSaveModal, setShowSaveModal] = useState(false);
     const [showPublishModal, setShowPublishModal] = useState(false);
     const [showCancelModal, setShowCancelModal] = useState(false);
-      
+    const [showLogoutModal, setShowLogoutModal] = useState(false);  
     const [show, setShow] = useState(false);
     const [linkInput, setLinkInput] = useState('');
     const [links, setLinks] = useState([]);
@@ -51,19 +44,25 @@ const ArticleCreationForm = () => {
     //Handle save
     const handleSave = () => {
         setShowSaveModal(false);
-        navigate("/my-articles"); // or clear session & redirect to login
+        navigate("/my-articles"); 
     };
 
     //Handle publish
     const handlePublish = () => {
         setShowPublishModal(false);
-        navigate("/view-article"); // or clear session & redirect to login
+        navigate("/view-article"); 
     };
 
     //Handle cancel
     const handleCancel = () => {
         setShowCancelModal(false);
-        navigate(-1); // or clear session & redirect to login
+        navigate(-1); 
+    };
+
+    //Handle logout
+    const handleLogout = () => {
+        setShowLogoutModal(false);
+        navigate("/logout"); 
     };
     
     return (
@@ -71,21 +70,7 @@ const ArticleCreationForm = () => {
             {/* Article Creation Form Page */}
             <div className={styles.main}>
                 {/* Navbar */}
-                <Navbar className={styles.navbar}>
-                    <Container className={styles.navContainer}>
-                        <Navbar.Brand className={styles.navBrand} onClick={() => navigate("/")}>
-                            <Image src={logo} alt="Logo"className={styles.navLogo}/>                            
-                            <div className={styles.navTitle}>KNOWLEDGE BASE</div>
-                        </Navbar.Brand>        
-                        <div className={styles.navSpace}></div>            
-                        <Navbar.Collapse className={styles.navMenu}>                       
-                                <Nav.Link className={styles.navIcons2} onClick={() => navigate(-1)}><ArrowLeft className={styles.navIcons}/></Nav.Link>                        
-                                <Nav.Link className={styles.navIcons2} onClick={() => navigate("/")}><HouseHeartFill className={styles.navIcons}/></Nav.Link>                        
-                                <Nav.Link className={styles.navIcons2} onClick={() => navigate("/searched-articles")}><Search className={styles.navIcons}/></Nav.Link>                        
-                                <Nav.Link className={styles.navIcons2} onClick={() => navigate("/")}><PersonCircle className={styles.navIcons}/></Nav.Link>                            
-                        </Navbar.Collapse>
-                    </Container>
-                </Navbar>
+                <Header/>
                 {/* Body / Form */}
                 <div className={styles.body}>
                     <div className={styles.title}>ARTICLE CREATION FORM</div>                  
@@ -254,6 +239,11 @@ const ArticleCreationForm = () => {
                 show={showCancelModal}
                 onClose={() => setShowCancelModal(false)}
                 onCancel={handleCancel}
+            />
+            <LogoutModal
+                show={showLogoutModal}
+                onClose={() => setShowLogoutModal(false)}
+                onLogout={handleLogout}
             />
         </>
     );

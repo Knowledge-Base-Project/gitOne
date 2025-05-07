@@ -1,0 +1,80 @@
+.navbar {
+    width: 1820px;
+    height: 87px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navContainer {
+    min-width: 1820px;
+    height: 87px;
+    align-content: space-between;
+    margin: 0px;
+}
+
+.navBrand {
+    width: 900px;
+    height: 87px;
+    padding: 0px;
+    margin: 0px;   
+    display: contents;
+    align-items: center;
+}
+
+.navLogo {
+    width: 87px;
+    height: 87px;
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navTitle {
+    display: inline;
+    min-width: 803px;
+    min-height: 87px;
+    font-family: 'Cinzel';
+    font-size: 64px;
+    font-weight: bold;
+    color: #2D5157;
+    line-height: auto;
+    padding: 0px;
+    margin: 0px 0px 0px 10px;
+}
+
+.navIcons {
+    min-width: 48px;
+    min-height: 48px;
+    color: #2D5157;  
+}
+
+.navIcons2 {
+    min-width: 64px;
+    min-height: 64px;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    border: none;
+}
+
+.navSpace {
+    min-width: 609px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navMenu {
+    min-width: 301px;
+    min-height: 84px;
+    gap: 15px;
+    align-self: right;
+    padding: 10px 0px;
+    margin: 0px;
+    align-items: center;
+}
+
+.dropdownMenu {
+    background-color: #2d5157;
+    border-radius: 8px;
+}

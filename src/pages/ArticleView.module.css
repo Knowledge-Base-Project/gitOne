@@ -1,116 +1,51 @@
 .knowledgeBase {
   font-family: Arial, sans-serif;
+  padding: 20px 50px;
+  width: 1920px;
+  height: 1080px;
+  zoom: 0.7;
 }
 
-.iconButton {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.resultItem {
-  margin-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.resultLinks a {
-  font-style: italic;
-  text-decoration: none;
-}
-
-.resultLinks a:hover {
-  text-decoration: underline;
-}
-
-.custom_btn {
-  background-color: #2d5157;
-  color: white;
-  border: 2px solid white;
-  border-radius: 10px; /* Optional: Rounded corners */
-}
-.custom-btn:hover {
-  background-color: #244448; /* Slightly darker on hover */
-  border-color: #1a3336; /* Change border color on hover */
-}
-
-.searchBar {
-  width: 700px; /* Adjust width */
-  height: 40px; /* Adjust height */
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px; /* Optional: Rounded corners */
-}
-
-.custom_text {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  color: #2d5157; /* Custom color */
-}
-
-.dropdownMenu {
-  background-color: #2d5157 !important;  /* Force background color */
-  border-radius: 8px;                     /* Optional: rounded corners */
-  border: none !important;                /* Remove unwanted borders */
-}
-
-.custom-dropdown .dropdown-item {
-  color: white !important;  /* Ensure text is white */
-}
-
-.custom-dropdown .dropdown-item:hover {
-  background-color: #1f3b44 !important;  /* Change background on hover */
-}
-
-
-/* .new css */
 .articlesSection {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  padding-left: 20px; /* Removes any built-in padding */
-  padding-bottom: 15px;
+  width: 1820px;
+  height: 840px;
+  padding: 40px 50px;
+  gap: 5px;
+}
+
+.articlesTitle2 {
+  width: 1720px;
+  height: 63px;
+  padding: 10px 0px;
+  gap: 15px;
+  display: inline-flex; 
+  align-items: flex-end; 
 }
 
 .articlesTitle {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
-  font-family: 'Cinzel', serif;
-  margin-right: 15px; /* Adds space between "MY ARTICLES" and "Drafts" */
-  margin-left: 16px;
+  width: 520px;
+  height: 53px;
+  font-size: 46px;
+  font-weight: 550;
+  color: #000000;
+  font-family: 'Inter'; 
 }
 
-.draftsButton {
-  background-color: #2D5157 !important;
-  margin-left: 15px; /* Adds space before "Drafts" button */
-  color: white;
-  padding: 5px 40px !important; /* Adjust padding for a better look */
-  border-radius: 30px !important; /* Makes the button more rounded */
-  font-size: 12px !important;
-  min-width: 150px; /* Makes the button longer */
-  height: 30px; /* Reduces height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none !important;  /* Remove any borders */
-  box-shadow: none !important; /* Remove any shadow effects */
-}
-
-/* Add hover effect */
-.draftsButton:hover {
-  background-color: #1E3A40 !important; /* Darker shade on hover */
-  color: white !important; /* Ensure text remains visible */
+.articlesInfo {
+  font-size: 22px;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  font-family: 'Inter';  
 }
 
 .articleList {
-  padding-left: 40px; /* Uniform padding */
-  margin-top: 20px;
-  font-size: 14px !important;
-  /* background-color: #f9f9f9;  */
-  /* Add background for visibility */
+  width: 1720px;
+  min-height: 693px;
+  padding: 25px 0px;
+  font-size: 22px;
+  font-family: 'Blinker';
+  line-height: 150%;
 }
 
 .indentedLine {
@@ -119,6 +54,11 @@
  
 .iconHover {
   transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  width: 33px;
+  height: 33px;
+  padding: 0px;
+  color: #545454;
+  cursor: pointer;
 }
 
 .iconHover:hover {

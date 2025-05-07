@@ -3,7 +3,7 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 import * as Icon from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 import styles from "./Home.module.css";
-import LoginModal from "../modal/LoginModal";
+import LoginModal from "../util/LoginModal";
 
 const KnowledgeBase = () => {
 
@@ -21,7 +21,7 @@ const KnowledgeBase = () => {
       {/* Header */}
       <Navbar className="d-flex justify-content-between align-items-center border-bottom pb-3">
         <div className="d-flex align-items-center gap-2">
-          <img src="Username.png" alt="Knowledge Base Logo" style={{ height: "60px" }} />
+          <img src="Username.png" alt="Logo" style={{ height: "60px" }} />
           <h1 className={styles.custom_text}>KNOWLEDGE BASE</h1>
         </div>
         <Nav className="d-flex align-items-center gap-3">
