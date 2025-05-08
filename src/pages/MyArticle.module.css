@@ -6,72 +6,15 @@
   zoom: 0.7;
 }
 
-.iconButton {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.body {
+  min-width: 1820px;
+  padding: 25px 50px;
+  margin: 0px;
+  gap: 5px;
 }
 
-.resultItem {
-  margin-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.resultLinks a {
-  font-style: italic;
-  text-decoration: none;
-}
-
-.resultLinks a:hover {
-  text-decoration: underline;
-}
-
-.custom_btn {
-  background-color: #2d5157;
-  color: white;
-  border: 2px solid white;
-  border-radius: 10px; /* Optional: Rounded corners */
-}
-.custom-btn:hover {
-  background-color: #244448; /* Slightly darker on hover */
-  border-color: #1a3336; /* Change border color on hover */
-}
-
-.searchBar {
-  width: 700px; /* Adjust width */
-  height: 40px; /* Adjust height */
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px; /* Optional: Rounded corners */
-}
-
-.custom_text {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  color: #2d5157; /* Custom color */
-}
-
-.dropdownMenu {
-  background-color: #2d5157 !important;  /* Force background color */
-  border-radius: 8px;                     /* Optional: rounded corners */
-  border: none !important;                /* Remove unwanted borders */
-}
-
-.custom-dropdown .dropdown-item {
-  color: white !important;  /* Ensure text is white */
-}
-
-.custom-dropdown .dropdown-item:hover {
-  background-color: #1f3b44 !important;  /* Change background on hover */
-}
-
-
-/* .new css */
 .articlesSection {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-top: 10px;
   padding-left: 20px; /* Removes any built-in padding */
@@ -79,12 +22,12 @@
 }
 
 .articlesTitle {
-  font-size: 24px;
+  margin-bottom: 25px;
+  font-family: 'Cinzel';
+  font-size: 48px;
   font-weight: bold;
   color: #797A7A;
-  font-family: 'Cinzel', serif;
-  margin-right: 15px; /* Adds space between "MY ARTICLES" and "Drafts" */
-  margin-left: 16px;
+  line-height: 150%;
 }
 
 .draftsButton {
@@ -112,16 +55,8 @@
 .articleList {
   padding-left: 40px; /* Uniform padding */
   margin-top: 20px;
-  /* background-color: #f9f9f9;  */
-  /* Add background for visibility */
 }
 
-/* .articleItem {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-} */
- 
 .iconHover {
   transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }

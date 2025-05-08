@@ -2,81 +2,53 @@
   font-family: Arial, sans-serif;
   padding: 20px 50px;
   width: 1920px;
-  height: 1080px;
   zoom: 0.7;
 }
 
-.subTitle {
-  font-family: "Cinzel";
-  font-size: 36px;
+.body {
+  min-width: 1820px;
+  padding: 50px 50px;
+  margin: 0px;
+  gap: 5px;
+}
+
+.title {
+  padding: 20px 0px;
+  margin-bottom: 25px;
+  font-family: 'Cinzel';
+  font-size: 42px;
   font-weight: bold;
+  text-decoration: underline;
+  color: #2d5157;
+  line-height: 150%;
+}
+
+.latestArtcl {
+  min-width: 1720px;
+  padding: 0px;
+  row-gap: 15px;
+  margin: 0px;      
+  font-size: 28px;
+  font-family: 'Inter';
+  color: #000000;
+  line-height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+}
+
+.articleGroup {
+  margin: 0px;
+  padding: 10px 0px;  
+  gap: 5px;
+}
+
+.articleName1 {    
+  font-weight: bold;
+}
+
+.articleInfo {
+  font-style: italic;
+  font-weight: 400;
   color: #797A7A;
 }
-
-.iconButton {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.resultItem {
-  margin-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.resultLinks a {
-  font-style: italic;
-  text-decoration: none;
-}
-
-.resultLinks a:hover {
-  text-decoration: underline;
-}
-
-.custom_btn {
-  height: 45px;
-  width: 80px;
-  background-color: #2d5157;
-  color: white;
-  border: 2px solid white;
-  border-radius: 10px; /* Optional: Rounded corners */
-}
-.custom-btn:hover {
-  background-color: #244448; /* Slightly darker on hover */
-  border-color: #1a3336; /* Change border color on hover */
-}
-
-.searchBar {
-  width: 700px; /* Adjust width */
-  height: 40px; /* Adjust height */
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px; /* Optional: Rounded corners */
-}
-
-.custom_text {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  color: #2d5157; /* Custom color */
-}
-
-.dropdownMenu {
-  background-color: #2d5157 !important;  /* Force background color */
-  border-radius: 8px;                     /* Optional: rounded corners */
-  border: none !important;                /* Remove unwanted borders */
-}
-
-.custom-dropdown .dropdown-item {
-  color: white !important;  /* Ensure text is white */
-}
-
-.custom-dropdown .dropdown-item:hover {
-  background-color: #1f3b44 !important;  /* Change background on hover */
-}
-
-
-
-

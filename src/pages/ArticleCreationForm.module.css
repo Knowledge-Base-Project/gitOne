@@ -1,7 +1,6 @@
 .main {
     padding: 20px 50px;
     width: 1920px;
-    height: 1080px;
     zoom: 0.7;
 }
 
@@ -90,7 +89,6 @@
 }
 
 .formGroup3 {
-    width: 720px;
     height: auto;
     padding: 10px 0px;
     margin: 0px;

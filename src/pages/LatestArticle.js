@@ -4,40 +4,33 @@ import React from "react";
 import styles from "./LatestArticle.module.css";
 import Header from "../util/Header";
 
-const SearchResult = () => {
+const LatestArticle = () => {
 
   // const navigate = useNavigate();     
   
   return (
     <div className={styles.knowledgeBase}>
+
       {/* Header */}
       <Header/>
 
-      {/* Search Bar */}
-      <div className="mt-4 d-flex gap-2">
-        <p className={styles.subTitle}>LATEST ARTICLES</p>
+      {/* Body */}
+      <div className={styles.body}>
+        {/* Page Title */}
+        <p className={styles.title}>LATEST ARTICLES</p>      
+
+        {/* Latest Articles */}
+        <div className={styles.latestArtcl}>
+          {[1, 2, 3, 4, 5].map((id) => (
+            <div key={id} className={`${styles.articleGroup} border-bottom pb-3`}>
+              <div className={styles.articleName1}> "The Secret Life of Socks: Where Do They Really Go?" </div>
+              <div className={styles.articleInfo}> Kozai - 2/14/2025 (Lifestyle)</div>
+            </div>
+          ))}
+        </div>      
       </div>
-
-      {/* Search Results */}
-      <div className="mt-4">
-        <p className="fst-italic">Search Result for (React JS): 143 Results</p>
-
-        {[1, 2].map((id) => (
-          <div key={id} className={`${styles.resultItem} border-bottom pb-3`}>
-            <h4 className="fw-bold">
-              "The Secret Life of Socks: Where Do They Really Go?"
-              <span className="text-secondary fst-italic"> Kozai - 2/14/2025</span>
-            </h4>
-            <p className={styles.resultLinks}>
-              <a href="#" className="text-primary fst-italic">Secret</a>{" "}
-              <a href="#" className="text-primary fst-italic">Life</a>{" "}
-              <a href="#" className="text-primary fst-italic">Socks</a>
-            </p>
-          </div>
-        ))}
-      </div>      
     </div>
   );
 };
 
-export default SearchResult;
+export default LatestArticle;
