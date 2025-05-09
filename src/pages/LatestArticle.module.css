@@ -1,5 +1,4 @@
 .knowledgeBase {
-  font-family: Arial, sans-serif;
   padding: 20px 50px;
   width: 1920px;
   zoom: 0.7;
@@ -29,7 +28,7 @@
   row-gap: 15px;
   margin: 0px;      
   font-size: 28px;
-  font-family: 'Inter';
+  font-family: 'Canva Sans';
   color: #000000;
   line-height: auto;
   display: grid;

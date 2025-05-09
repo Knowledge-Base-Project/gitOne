@@ -28,18 +28,15 @@ const MyArticle = () => {
         {/* Page Title Section */}
         <div className={styles.articlesSection}>
           {/* Page Title */}
-          <span className={styles.articlesTitle}>MY ARTICLES</span>
+          <span className={styles.title}>MY ARTICLES</span>
           {/* React-Bootstrap Dropdown Section */}
           <Dropdown>
-            <Dropdown.Toggle variant="secondary" id="dropdown-basic" className={styles.draftsButton}>
-              {/* Drafts <i className="fas fa-chevron-down fa-lg" style={{ marginLeft: "8px" }}></i> */}
-              Drafts <i style={{ marginLeft: "8px" }}></i>
-            </Dropdown.Toggle>
-
+            <Dropdown.Toggle className={styles.draftsButton}>Drafts </Dropdown.Toggle>
             <Dropdown.Menu>
               <Dropdown.Item href="#/action-1">Draft 1</Dropdown.Item>
-              <Dropdown.Item href="#/action-2">Draft 2</Dropdown.Item>
-              <Dropdown.Item href="#/action-3">Draft 3</Dropdown.Item>
+              <Dropdown.Item href="#/action-2">Published</Dropdown.Item>
+              <Dropdown.Divider />
+              <Dropdown.Item href="#/action-3">All</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
         </div>

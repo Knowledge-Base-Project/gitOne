@@ -35,7 +35,7 @@ const ArticleView = () => {
         </div>
         
         {/* Article content */}
-        <div className={styles.articleList}>
+        <div className={styles.articleContent}>
           <div>
             {[
               "Coffee is more than just a drink—it’s a ritual, a source of energy, and for many, a daily necessity.",

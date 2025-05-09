@@ -1,5 +1,4 @@
 .knowledgeBase {
-  font-family: Arial, sans-serif;
   padding: 20px 50px;
   width: 1920px;
   height: 1080px;
@@ -16,13 +15,12 @@
 .articlesSection {
   display: inline-flex;
   align-items: center;
-  margin-top: 10px;
-  padding-left: 20px; /* Removes any built-in padding */
-  padding-bottom: 15px;
+  padding: 0px;
+  margin-bottom: 25px;
+  gap: 40px;
 }
 
-.articlesTitle {
-  margin-bottom: 25px;
+.title {
   font-family: 'Cinzel';
   font-size: 48px;
   font-weight: bold;
@@ -32,24 +30,31 @@
 
 .draftsButton {
   background-color: #2D5157 !important;
-  margin-left: 15px; /* Adds space before "Drafts" button */
-  color: white;
-  padding: 5px 40px !important; /* Adjust padding for a better look */
-  border-radius: 30px !important; /* Makes the button more rounded */
-  font-size: 12px !important;
-  min-width: 150px; /* Makes the button longer */
-  height: 30px; /* Reduces height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none !important;  /* Remove any borders */
-  box-shadow: none !important; /* Remove any shadow effects */
+  color: #FFFFFF !important;
+  font-family: 'Blinker';
+  font-size: 25px !important;
+  padding: 0px !important; /* Adjust padding for a better look */
+  border-radius: 70px !important; /* Makes the button more rounded */
+  min-width: 280px !important; /* Makes the button longer */
+  height: 54.5px !important; /* Reduces height */
 }
 
 /* Add hover effect */
 .draftsButton:hover {
   background-color: #1E3A40 !important; /* Darker shade on hover */
   color: white !important; /* Ensure text remains visible */
+}
+
+.dropdownItem {
+  background-color: #2D5157 !important;
+  color: #FFFFFF !important;
+  font-family: 'Blinker';
+  font-size: 25px !important;
+  padding: 0px !important; /* Adjust padding for a better look */
+  border-radius: 70px !important; /* Makes the button more rounded */
+  min-width: 280px !important; /* Makes the button longer */
+  height: 54.5px !important; /* Reduces height */
+  align-items: stretch;
 }
 
 .articleList {
