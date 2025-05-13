@@ -20,35 +20,38 @@ const SearchResult = () => {
     <div className={styles.knowledgeBase}>
       {/* Header */}
       <Header/>
-
-      {/* Search Bar */}
-      <div className="mt-4 d-flex gap-2">
+      {/* Body */}
+      <div className={styles.body}>
+        {/* Search Bar */}  
         <input 
-          type="text"
           ref={searchInputRef}
-          className="searchBar form-control" 
-          placeholder="Search..." />
+          type="text" 
+          placeholder="Search..." 
+          className={styles.searchBar}
+        />  
+        {/* Search Button */}
         <button className={`${styles.custom_btn} btn`}>Search</button>
-      </div>
-
-      {/* Search Results */}
-      <div className="mt-4">
-        <p className="fst-italic">Search Result for (React JS): 143 Results</p>
-
-        {[1, 2].map((id) => (
-          <div key={id} className={`${styles.resultItem} border-bottom pb-3`}>
-            <h4 className="fw-bold">
-              "The Secret Life of Socks: Where Do They Really Go?"
-              <span className="text-secondary fst-italic"> Kozai - 2/14/2025</span>
-            </h4>
-            <p className={styles.resultLinks}>
-              <a href="#" className="text-primary fst-italic">Secret</a>{" "}
-              <a href="#" className="text-primary fst-italic">Life</a>{" "}
-              <a href="#" className="text-primary fst-italic">Socks</a>
-            </p>
+        {/* Search Results */}        
+        <p className={styles.searchResult}>Search Result for (React JS): 143 Results</p>
+        {/* Articles List */}
+        <div className={styles.articleList}>
+          <div>
+            {[1, 2, 3, 4, 5].map((id) => (
+            <div key={id} className={styles.articleGroup}>
+              <div className={styles.articleName2}>
+                <div className={styles.articleName1}> "The Secret Life of Socks: Where Do They Really Go?" </div>
+                <div className={styles.articleInfo}> Kozai - 2/14/2025 <div className={styles.category}>(Lifestyle)</div></div>
+              </div>
+              <div className={styles.articleTags}>
+                <div className={styles.tag}>Secret</div>
+                <div className={styles.tag}>Life</div>
+                <div className={styles.tag}>Socks</div>
+              </div>
+            </div>
+          ))}
           </div>
-        ))}
-      </div>
+        </div>
+      </div>      
     </div>
   );
 };

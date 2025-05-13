@@ -1,39 +1,23 @@
 .knowledgeBase {
-  font-family: Arial, sans-serif;
   padding: 20px 50px;
   width: 1920px;
-  height: 1080px;
   zoom: 0.7;
 }
 
-.iconButton {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.resultItem {
-  margin-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.resultLinks a {
-  font-style: italic;
-  text-decoration: none;
-}
-
-.resultLinks a:hover {
-  text-decoration: underline;
+.body {
+  min-width: 1820px;
+  padding: 25px 50px;
+  margin: 0px;
+  gap: 5px;
 }
 
 .custom_btn {
-  height: 45px;
-  width: 80px;
+  height: 58px;
+  width: 140px;
   background-color: #2d5157;
   color: white;
+  font-size: 32px;
+  font-family: 'Canva Sans';
   border: 2px solid white;
   border-radius: 10px; /* Optional: Rounded corners */
 }
@@ -42,34 +26,79 @@
   border-color: #1a3336; /* Change border color on hover */
 }
 
-.searchBar {
-  width: 700px; /* Adjust width */
-  height: 40px; /* Adjust height */
-  padding: 8px 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px; /* Optional: Rounded corners */
+.articleList {
+  min-width: 1720px;
+  padding: 0px;
+  row-gap: 15px;
+  margin: 0px; 
+  font-family: 'Canva Sans';
+  font-size: 25px;
+  color: #000000;
+  line-height: auto;
 }
 
-.custom_text {
-  font-family: 'Times New Roman', Times, serif;
+.articleGroup {
+  margin: 0px;
+  padding: 20px 0px;  
+  gap: 15px;
+}
+
+.articleName1 {    
   font-weight: bold;
-  color: #2d5157; /* Custom color */
 }
 
-.dropdownMenu {
-  background-color: #2d5157 !important;  /* Force background color */
-  border-radius: 8px;                     /* Optional: rounded corners */
-  border: none !important;                /* Remove unwanted borders */
+.articleInfo {
+  font-style: italic;
+  font-weight: 400;
+  color: #797A7A;
+  margin-left: 20px;
 }
 
-.custom-dropdown .dropdown-item {
-  color: white !important;  /* Ensure text is white */
+.category {
+  text-decoration: underline;
+  display: inline-flex;
 }
 
-.custom-dropdown .dropdown-item:hover {
-  background-color: #1f3b44 !important;  /* Change background on hover */
+.articleName2 {  
+  display: flex;   
 }
 
+.tag {
+  color: blue;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 550;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.articleTags{
+  display: flex;  
+  gap: 15px;
+}
+
+.searchBar {
+  width: 1570px;
+  border: 1px solid #000000;
+  font-family: 'Canva Sans';
+  font-size: 24px;
+  font-weight: normal;
+  color: #000000;
+  line-height: auto;
+  height: 54px;
+  align-items: center;
+  display: inline-flex; 
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.searchResult {
+  font-family: 'San Serif';
+  font-size: 24px;
+  font-weight: normal;  
+  font-style: italic;
+  color: #000000;
+}
 
 
 

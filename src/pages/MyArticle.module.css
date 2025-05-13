@@ -1,7 +1,6 @@
 .knowledgeBase {
   padding: 20px 50px;
   width: 1920px;
-  height: 1080px;
   zoom: 0.7;
 }
 
@@ -28,38 +27,89 @@
   line-height: 150%;
 }
 
-.draftsButton {
+.toggleButton {
   background-color: #2D5157 !important;
   color: #FFFFFF !important;
   font-family: 'Blinker';
   font-size: 25px !important;
   padding: 0px !important; /* Adjust padding for a better look */
   border-radius: 70px !important; /* Makes the button more rounded */
-  min-width: 280px !important; /* Makes the button longer */
+  min-width: 220px !important; /* Makes the button longer */
   height: 54.5px !important; /* Reduces height */
 }
 
 /* Add hover effect */
-.draftsButton:hover {
+.toggleButton:hover {
   background-color: #1E3A40 !important; /* Darker shade on hover */
   color: white !important; /* Ensure text remains visible */
 }
 
-.dropdownItem {
-  background-color: #2D5157 !important;
-  color: #FFFFFF !important;
+.dropdownMenu {
+  background-color: #FFFFFF !important;
+  color: #1E3A40 !important;
   font-family: 'Blinker';
   font-size: 25px !important;
+  border-radius: 20px !important; 
   padding: 0px !important; /* Adjust padding for a better look */
-  border-radius: 70px !important; /* Makes the button more rounded */
-  min-width: 280px !important; /* Makes the button longer */
-  height: 54.5px !important; /* Reduces height */
+  min-width: 220px !important; /* Makes the button longer */
+  height: 160px !important; /* Reduces height */
   align-items: stretch;
 }
 
+.dropdownItem:hover {
+  background-color: #1E3A40;
+  color: #FFFFFF;
+}
+
 .articleList {
-  padding-left: 40px; /* Uniform padding */
-  margin-top: 20px;
+  min-width: 1720px;
+  padding: 0px;
+  row-gap: 15px;
+  margin: 0px; 
+  font-family: 'Canva Sans';
+  font-size: 25px;
+  color: #000000;
+  line-height: auto;
+}
+
+.articleGroup {
+  margin: 0px;
+  padding: 20px 0px;  
+  gap: 15px;
+}
+
+.articleName1 {    
+  font-weight: bold;
+}
+
+.articleInfo {
+  font-style: italic;
+  font-weight: 400;
+  color: #797A7A;
+  margin-left: 20px;
+}
+
+.category {
+  text-decoration: underline;
+  display: inline-flex;
+}
+
+.articleName2 {  
+  display: flex;   
+}
+
+.tag {
+  color: blue;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 550;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.articleTags{
+  display: flex;  
+  gap: 15px;
 }
 
 .iconHover {
