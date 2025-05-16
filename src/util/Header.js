@@ -50,7 +50,7 @@ const Header = ({back, login}) => {
                     <Navbar.Collapse className={styles.navMenu}> 
                         { back ?                     
                             <Nav.Link className={styles.navIcons2} onClick={() => navigate(-1)}><ArrowLeft className={styles.navIcons}/></Nav.Link>                        
-                        : null }
+                        : <div className={styles.navIcons2}></div> }
                         <Nav.Link className={styles.navIcons2} onClick={() => navigate("/")}><HouseHeartFill className={styles.navIcons}/></Nav.Link>                        
                         <Nav.Link className={styles.navIcons2} onClick={() => navigate("/searched-articles")}><Search className={styles.navIcons}/></Nav.Link>                        
                         { login ? 

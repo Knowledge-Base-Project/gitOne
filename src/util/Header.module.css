@@ -11,6 +11,7 @@
     height: 87px;
     align-content: space-between;
     margin: 0px;
+    display: flex;
 }
 
 .navBrand {
@@ -76,13 +77,14 @@
 }
 
 .navSpace {
-    min-width: 609px;
+    min-width: 500px;
     padding: 0px;
     margin: 0px;
 }
 
 .navMenu {
-    min-width: 301px;
+    float: right;
+    max-width: 360px;
     min-height: 84px;
     gap: 15px;
     align-self: right;
