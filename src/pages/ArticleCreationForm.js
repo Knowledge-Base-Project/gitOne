@@ -99,12 +99,11 @@ const ArticleCreationForm = () => {
                             </Form.Group>
                         </div>
                         <div className={styles.rightCol}>
-                            <Form.Group className={styles.formGroup3} controlId="formAttachments">
-                                <Form.Label className={styles.formLabel2} for="inputGroupFile01">Attachments:</Form.Label>
+                            <Form.Group className={styles.formGroup3}>
+                                <Form.Label className={styles.formLabel2}>Attachments:</Form.Label>
                                 <Form.Control 
                                     type="file" 
                                     className={styles.formFileUpld} 
-                                    id="inputGroupFile01" 
                                     multiple 
                                     onChange={(e) => {
                                         const newFiles = Array.from(e.target.files).map(file => ({
@@ -112,7 +111,6 @@ const ArticleCreationForm = () => {
                                             size: file.size, 
                                         }));
                                         setFiles(prevFiles => [...prevFiles, ...newFiles]);
-                                        console.log(newFiles);
                                     }} 
                                 />
                             </Form.Group>
@@ -120,7 +118,6 @@ const ArticleCreationForm = () => {
                                 <Form.Label className={styles.formLabel2}>Links:</Form.Label>
                                 <InputGroup className={styles.linkInputContainer}>
                                     <Form.Control 
-                                        id="basic-url"
                                         aria-describedby="basic-addon3" 
                                         type="text" 
                                         value={linkInput} 

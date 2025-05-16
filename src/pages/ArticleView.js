@@ -3,14 +3,14 @@ import {
     PencilSquare, 
     Trash3Fill,
 } from 'react-bootstrap-icons';
-//import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./ArticleView.module.css";
 import DeleteModal from "../util/DeleteModal";
 import Header from "../util/Header";
 
 const ArticleView = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   //Modal state
   const [showDeleteModal, setShowDeleteModal] = useState(false);
 
@@ -29,7 +29,7 @@ const ArticleView = () => {
         <div className={styles.articlesTitle2}>
           <div className={styles.articlesTitle}>How to make coffee.......</div>
           <div className={styles.articlesInfo}>Jack (2025-2-17)</div>
-          <PencilSquare className={styles.iconHover}/> {/* Edit Icon */}
+          <PencilSquare className={styles.iconHover} onClick={() => navigate("/add-article")}/> {/* Edit Icon */}
           <Trash3Fill className={styles.iconHover} onClick={() => setShowDeleteModal(true)}/> {/* Delete Icon */}
         </div>
         
