@@ -12,7 +12,7 @@ const LatestArticle = () => {
     <div className={styles.knowledgeBase}>
 
       {/* Header */}
-      <Header/>
+      <Header back={true} login={false}/>
 
       {/* Body */}
       <div className={styles.body}>

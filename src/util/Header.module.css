@@ -58,6 +58,23 @@
     border: none;
 }
 
+.navLogin {
+    min-width: 120px;
+    min-height: 48px;
+    background-color: #2d5157;
+    border-radius: 20px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.login {    
+    font-family: 'Inter';
+    font-weight: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
 .navSpace {
     min-width: 609px;
     padding: 0px;

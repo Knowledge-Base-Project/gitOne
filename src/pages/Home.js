@@ -1,42 +1,21 @@
-import React, { useState } from "react";
-import { Container, Navbar, Nav } from "react-bootstrap";
-import * as Icon from "react-bootstrap-icons";
+// import React, { useState } from "react";
+// import { Container } from "react-bootstrap";
+// import * as Icon from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 import styles from "./Home.module.css";
-import LoginModal from "../util/LoginModal";
+import Header from "../util/Header";
 
 const KnowledgeBase = () => {
 
   const navigate = useNavigate();
-  //Modal state
-  const [showLoginModal, setShowLoginModal] = useState(false);
-  
-  //Handle login
-  const handleLogin = () => {
-    setShowLoginModal(false);
-    navigate("/"); // or clear session & redirect to login
-  };  
+   
   return (
-    <Container fluid className={`py-4 ${styles.knowledgeBase}`} style={{ backgroundColor: "white" }}>
+    <div className={styles.knowledgeBase}>
       {/* Header */}
-      <Navbar className="d-flex justify-content-between align-items-center border-bottom pb-3">
-        <div className="d-flex align-items-center gap-2">
-          <img src="Username.png" alt="Logo" style={{ height: "60px" }} />
-          <h1 className={styles.custom_text}>KNOWLEDGE BASE</h1>
-        </div>
-        <Nav className="d-flex align-items-center gap-3">
-          <div className="nav-btn" onClick={() => navigate("/")}>
-            <Icon.HouseFill size={24} color="#2E4A3F" />
-          </div>
-          <div className="nav-btn" onClick={() => navigate("/searched-articles")}>
-            <Icon.Search size={24} color="#2E4A3F"/>
-          </div>
-          <div className="btn btn-dark rounded-pill px-3" onClick={() => setShowLoginModal(true)}>Login</div>
-        </Nav>
-      </Navbar>
+      <Header back={false} login={false}/>
 
-      {/* Articles Section */}
-      <div className="d-flex justify-content-center gap-5 px-5 mt-5">
+      {/* Body */}
+      <div className={styles.body}>
         {/* Latest Articles */}
         <div className="flex-grow-1 p-4 bg-white rounded shadow-sm">
           <h2 className="mb-4">Latest Articles</h2>
@@ -98,12 +77,7 @@ const KnowledgeBase = () => {
           </div>
         </div>
       </div>
-      <LoginModal
-        show={showLoginModal}
-        onClose={() => setShowLoginModal(false)}
-        onLogin={handleLogin}
-      />
-    </Container>
+    </div>
   );
 };
 

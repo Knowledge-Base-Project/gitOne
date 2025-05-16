@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { 
     PencilSquare, 
     Trash3Fill,
@@ -21,9 +21,8 @@ const ArticleView = () => {
 
   return (
     <div className={styles.knowledgeBase}>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
       {/* Navbar */}
-      <Header/>
+      <Header back={true} login={true}/>
       {/* Body */}
       <div className={styles.articlesSection}>
         {/* Page Title */}

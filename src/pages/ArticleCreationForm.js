@@ -70,7 +70,7 @@ const ArticleCreationForm = () => {
             {/* Article Creation Form Page */}
             <div className={styles.main}>
                 {/* Navbar */}
-                <Header/>
+                <Header back={true} login={true}/>
                 {/* Body / Form */}
                 <div className={styles.body}>
                     <div className={styles.title}>ARTICLE CREATION FORM</div>                  

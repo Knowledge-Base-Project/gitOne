@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useRef } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import styles from "./SearchResult.module.css";
 import Header from "../util/Header";
 
 const SearchResult = () => {
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const searchInputRef = useRef(null);
   
   // const handleSearchClick = () => {
@@ -19,7 +19,7 @@ const SearchResult = () => {
   return (
     <div className={styles.knowledgeBase}>
       {/* Header */}
-      <Header/>
+      <Header back={true} login={true}/>
       {/* Body */}
       <div className={styles.body}>
         {/* Search Bar */}  
@@ -39,7 +39,7 @@ const SearchResult = () => {
             {[1, 2, 3, 4, 5].map((id) => (
             <div key={id} className={styles.articleGroup}>
               <div className={styles.articleName2}>
-                <div className={styles.articleName1}> "The Secret Life of Socks: Where Do They Really Go?" </div>
+                <div className={styles.articleName1} onClick={() => navigate("/view-article")}> "The Secret Life of Socks: Where Do They Really Go?" </div>
                 <div className={styles.articleInfo}> Kozai - 2/14/2025 <div className={styles.category}>(Lifestyle)</div></div>
               </div>
               <div className={styles.articleTags}>

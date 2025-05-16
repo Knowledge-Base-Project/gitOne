@@ -28,7 +28,7 @@ const MyArticle = () => {
   return (
     <div className={styles.knowledgeBase} style={{ backgroundColor: "white" }}>
       {/* Header */}
-      <Header/>
+      <Header back={true} login={true}/>
       
       {/* Body */}
       <div className={styles.body}>
@@ -53,7 +53,7 @@ const MyArticle = () => {
             {[1, 2, 3, 4, 5].map((id) => (
             <div key={id} className={styles.articleGroup}>
               <div className={styles.articleName2}>
-                <div className={styles.articleName1}> "The Secret Life of Socks: Where Do They Really Go?" </div>
+                <div className={styles.articleName1} onClick={() => navigate("/view-article")}> "The Secret Life of Socks: Where Do They Really Go?" </div>
                 <div className={styles.articleInfo}> Kozai - 2/14/2025 <div className={styles.category}>(Lifestyle)</div></div>
               </div>
               <div className={styles.articleTags}>
