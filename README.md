@@ -25,7 +25,7 @@ $ npm run deploy -- -m "Deploy React app to GitHub Pages"
 ```
 > [!NOTE]
 > This action will create a new build folder and push the updates (build folder content) into the default branch (gh-pages).  
-For more information see https://github.com/gitname/react-gh-pages?tab=readme-ov-file#7-push-the-react-app-to-the-github-repository
+> For more information see https://github.com/gitname/react-gh-pages?tab=readme-ov-file#7-push-the-react-app-to-the-github-repository
 
 # Store the updated source code on GitHub (branch: master)
 ```
@@ -33,4 +33,8 @@ $ git add .
 $ git commit -m "Configure React app for deployment to GitHub Pages"
 $ git push origin master
 ```
-For more information see https://github.com/gitname/react-gh-pages?tab=readme-ov-file#9-optional-store-the-react-apps-source-code-on-github
+> [!NOTE]
+> For more information see https://github.com/gitname/react-gh-pages?tab=readme-ov-file#9-optional-store-the-react-apps-source-code-on-github
+
+# Pull repository
+For more information see https://github.com/git-guides/git-pull
