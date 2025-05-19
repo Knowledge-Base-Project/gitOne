@@ -20,7 +20,7 @@ $ git clone https://github.com/Knowledge-Base-Project/gitOne.git
 ```
 $ npm run deploy
 ```
-* *optional: push and add comment example:* *
+* *optional: push and add comment example:
 ```
 $ npm run deploy -- -m "Deploy React app to GitHub Pages"
 ```
